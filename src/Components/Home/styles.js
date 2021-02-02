@@ -8,7 +8,6 @@ export default makeStyles((theme) => ({
         color: 'white',
         [theme.breakpoints.down('sm')]: {
             height: '90vh',
-            marginTop: '10vh',
         },
     },
     name: {
@@ -72,7 +71,7 @@ export default makeStyles((theme) => ({
         backgroundColor: '#ffff',
         fontSize: '46px',
         borderRadius: '50%',
-        marginLeft: '50%',
+        marginLeft: '48%',
         [theme.breakpoints.down('sm')]: {
             marginLeft: '45%',
             fontSize: '30px'

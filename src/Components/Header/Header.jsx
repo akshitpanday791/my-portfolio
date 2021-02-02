@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import {withRouter} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
-import {AppBar, Toolbar, Typography, Button, IconButton, Drawer, MenuItem, Container, List, ListItem, ListItemText} from '@material-ui/core';
+import {AppBar, Toolbar, Typography, Button, IconButton, Drawer, MenuItem, Container, List, ListItem} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
 import useStyles from './styles';
@@ -49,29 +50,29 @@ const Header = () => {
 
         return(
             <Toolbar>
-                <IconButton color="inherit" edge="start" onClick={handleDrawerOpen} aria-haspopup="true"> <MenuIcon /> </IconButton>
                 <Typography variant="h5" className={classes.title}>Portfolio</Typography>
                 <Drawer anchor="left" open={drawerOpen} onClose={handleDrawerClose}>
                     <div className={classes.drawerContainer}>
-                        <MenuItem> HOME </MenuItem>
-                        <MenuItem> ABOUT </MenuItem>
-                        <MenuItem> PROJECTS </MenuItem>
-                        <MenuItem> BLOG </MenuItem>
-                        <MenuItem> CONTACT </MenuItem>
+                        <a href="#" className={classes.drawerItem}> <MenuItem> HOME </MenuItem></a>
+                        <a href="#about" className={classes.drawerItem}><MenuItem> ABOUT </MenuItem></a>
+                        <a href="#projects" className={classes.drawerItem}><MenuItem> PROJECTS </MenuItem></a>
+                        <a href="#blog" className={classes.drawerItem}><MenuItem> BLOG </MenuItem> </a>
+                        <a href="#contact" className={classes.drawerItem}><MenuItem> CONTACT </MenuItem></a>
                     </div>
                 </Drawer>  
+                <IconButton color="inherit" edge="start" onClick={handleDrawerOpen} aria-haspopup="true"> <MenuIcon /> </IconButton>
             </Toolbar>
         )
     
     }
 
     return (
-        <header>
-            <AppBar className={classes.root} position="static">
-                {mobileView? displayMobile() : displayDesktop()}
-            </AppBar>
-        </header>
+        <AppBar position="sticky" className={classes.root}>
+            {mobileView? displayMobile() : displayDesktop()}
+        </AppBar>
     );
 };
 
 export default Header;
+
+

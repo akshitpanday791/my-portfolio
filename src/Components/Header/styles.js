@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
         zIndex: '5',
         color: '#f6f5f5',
         background: '#111010',
-        paddingTop: '8px',
+        paddingTop: '7px',
         paddingBottom: '8px',
         fontFamily: '"Segoe UI"',
         height: '10vh',
@@ -42,5 +42,11 @@ export default makeStyles((theme) => ({
     drawerContainer: {
         padding: "20px 30px",
         marginTop: '25px'
-    }
+    },
+    drawerItem: {
+        fontSize: '21px',
+        color: '#111010',
+        textDecoration: 'none',
+        fontWeight: 'bold',
+    }, 
 }));

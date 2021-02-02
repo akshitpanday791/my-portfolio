@@ -12,6 +12,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 import myimage from '../../Assets/Profile.jpg';
 import useStyles from './styles';
+import './Home.css';
 
 const Home = () => {
     const classes = useStyles();
@@ -36,7 +37,7 @@ const Home = () => {
                     <TypistLoop interval={500}>
                         {[
                             'Web Developer',
-                            'Computer Science Engineer',
+                            'Computer Science Student',
                             'Programmer',
                         ].map(text => <Typist key={text} startDelay={500}>{text} <Typist.Backspace count={text.length + 1} delay={200} /> </Typist>)}
                     </TypistLoop>
