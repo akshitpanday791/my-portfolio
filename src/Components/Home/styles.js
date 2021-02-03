@@ -1,8 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
+import backgroundImage from '../../Assets/header-background.jpg';
 
 export default makeStyles((theme) => ({
     root: {
-        background: '#111010',
+        backgroundSize: 'cover',
+        objectFit: 'contain center',
+        backgroundImage : `url(${backgroundImage})`,
+        backgrundPosition: 'center center',
         fontFamily: '"Segoe UI"',
         height: '90vh',
         color: 'white',
@@ -13,16 +17,16 @@ export default makeStyles((theme) => ({
     name: {
         fontWeight: 'bold',
         [theme.breakpoints.down('sm')]: {
-            fontSize: '30px',
+            fontSize: '32px',
         },
     },
     image: {
         objectFit: 'contain',
-        marginTop: '30px',
-        width: '360px',
+        marginTop: '50px',
+        height: '375px',
         borderRadius: '50%',
         [theme.breakpoints.down('sm')]: {
-            width: '210px',
+            height: '250px',
         },
     },
     item: {
@@ -37,14 +41,15 @@ export default makeStyles((theme) => ({
     },
     iconsContainer: {
         marginTop: '25px',
-        marginBottom: '10px'
     },
     icon: {
         fontSize: '36px',
-        marginLeft: '15px',
+        marginLeft: '10px',
+        padding: '6px',
+        borderRadius: '50%',
         "&:hover": {
-            color: '#bbbfca',
-            transform: 'translateY(-2px)',
+            color: '#111010',
+            backgroundColor: 'white'
         },
         [theme.breakpoints.down('sm')]: {
             fontSize: '28px',
@@ -53,7 +58,7 @@ export default makeStyles((theme) => ({
     button: {
         color: '#ffff',
         fontWeight: 'bold',
-        border: '1px solid #707070',
+        border: '2px solid #707070',
         marginTop: '30px',
         marginBottom: '20px',
         padding: '12px',
@@ -62,7 +67,7 @@ export default makeStyles((theme) => ({
             color: '#111010',
         },
         [theme.breakpoints.down('sm')]: {
-            padding: '8px',
+            padding: '10px',
             marginTop: '20px'
         },
     },
@@ -71,13 +76,17 @@ export default makeStyles((theme) => ({
         backgroundColor: '#ffff',
         fontSize: '46px',
         borderRadius: '50%',
-        marginLeft: '48%',
         [theme.breakpoints.down('sm')]: {
-            marginLeft: '45%',
             fontSize: '30px'
         },
         "&:hover": {
             backgroundColor: '#707070',
+        },
+    },
+    arrowLink: {
+        marginLeft: '50%',
+        [theme.breakpoints.down('sm')]: {
+            marginLeft: '45%'
         },
     }
 }));

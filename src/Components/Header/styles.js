@@ -2,13 +2,13 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     root: {
-        zIndex: '5',
+        backgroundColor: '#0E0F13',
         color: '#f6f5f5',
-        background: '#111010',
         paddingTop: '7px',
-        paddingBottom: '8px',
         fontFamily: '"Segoe UI"',
         height: '10vh',
+        width: '100%',
+        boxShadow: 'none',
     },
     navbarDisplayFlex: {
         display: `flex`,
@@ -18,7 +18,7 @@ export default makeStyles((theme) => ({
     title: {
         flexGrow: 1,
         fontWeight:'bold',
-        marginLeft: '5px'
+        marginLeft: '5px',
     },
     navDisplayFlex: {
         display: `flex`,
@@ -49,4 +49,14 @@ export default makeStyles((theme) => ({
         textDecoration: 'none',
         fontWeight: 'bold',
     }, 
+    button: {
+        color: '#ffff',
+        fontWeight: 'bold',
+        border: '1px solid #707070',
+        padding: '10px',
+        "&:hover": {
+            backgroundColor: 'white',
+            color: '#111010',
+        }
+    },
 }));

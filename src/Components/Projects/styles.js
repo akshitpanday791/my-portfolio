@@ -2,8 +2,15 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     root: {
-        backgroundColor: 'white',
-        height: '90vh'
+        fontFamily: '"Segoe UI"',
+        [theme.breakpoints.down('sm')]: {
+            marginLeft: '2%',
+            marginRight: '2%',
+        },
+    },
+    title: {
+        textAlign: 'center',
+        margin: '50px',
     }
 
 }));

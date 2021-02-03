@@ -9,9 +9,9 @@ const About = () => {
 
     return (
         <div className={classes.root} id="about">
-            <h1 className={classes.title}>ABOUT ME</h1>
+            <h2 className={classes.title}><u>ABOUT ME</u></h2>
             <Grid container alignItems="center" justify="center" spacing={0}>
-                <Grid item xs={0} sm={2}>
+                <Grid item xs={false} sm={2}>
 
                 </Grid>
 
@@ -20,13 +20,12 @@ const About = () => {
                         <h3 className={classes.intro}>Hi :)</h3>
                         <p className={classes.info}>👋I'm Akshit Panday from Nagpur, India. I am a Web Developer and Programmer currently pursing a Bachelors Degree in 
                         Computer Science. After my graduation I'm interested in working in some reputed IT-company for my
-                        professional as well as personal growth. I love to build Web apps & Mobile apps and
-                            to explore latest technologies and frameworks in field of Computer Science.<br /> <br /> My hobbies are to play 
-                        cricket, playing online video games, watching movies/web-series, making memes & Travelling.</p>
+                        professional as well as personal growth. I'm a Tech enthusiast woh loves to build full stack Web apps & Mobile apps, Open source contributions and to explore latest frameworks and technologies in field of Computer Science.  Apart from this I like to play online video games
+                            and travelling.</p>
                     </Window>
                 </Grid>
 
-                <Grid item xs={0} sm={2}>
+                <Grid item xs={false} sm={2}>
             
                 </Grid>
             </Grid>

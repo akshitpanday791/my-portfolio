@@ -3,6 +3,7 @@ import {withRouter} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import {AppBar, Toolbar, Typography, Button, IconButton, Drawer, MenuItem, Container, List, ListItem} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+import GetAppIcon from '@material-ui/icons/GetApp';
 
 import useStyles from './styles';
 
@@ -14,11 +15,12 @@ const Header = () => {
         drawerOpen: false
     });
 
+
     const{mobileView, drawerOpen} = state;
 
     useEffect(() => {
         const setResponsiveness = () => {
-            return window.innerWidth < 900
+            return window.innerWidth < 965
               ? setState((prevState) => ({ ...prevState, mobileView: true }))
               : setState((prevState) => ({ ...prevState, mobileView: false }));
         }
@@ -26,6 +28,7 @@ const Header = () => {
         setResponsiveness();
         window.addEventListener("resize", () =>  setResponsiveness());
     },[]);
+
 
     const displayDesktop = () => {
         return(
@@ -36,8 +39,8 @@ const Header = () => {
                         <Link smooth to="#" className={classes.listItem}> <ListItem button>HOME</ListItem> </Link>
                         <Link smooth to="#about" className={classes.listItem}> <ListItem button>ABOUT</ListItem> </Link>
                         <Link smooth to="#projects" className={classes.listItem}> <ListItem button>PROJECTS</ListItem> </Link>
-                        <Link smooth to="#blog" className={classes.listItem}> <ListItem button>BLOG</ListItem> </Link>
-                        <Link smooth to="#contact" className={classes.listItem}> <ListItem button>CONTACT</ListItem> </Link>
+                        <Link smooth to="#footer" className={classes.listItem}> <ListItem button>CONTACT</ListItem> </Link>
+                        {/* <Link smooth to="#blog" className={classes.listItem}> <Button className={classes.button}><GetAppIcon />&nbsp; Download Resume</Button> </Link> */}
                     </List>
                 </Container>
             </Toolbar>
@@ -56,8 +59,8 @@ const Header = () => {
                         <a href="#" className={classes.drawerItem}> <MenuItem> HOME </MenuItem></a>
                         <a href="#about" className={classes.drawerItem}><MenuItem> ABOUT </MenuItem></a>
                         <a href="#projects" className={classes.drawerItem}><MenuItem> PROJECTS </MenuItem></a>
-                        <a href="#blog" className={classes.drawerItem}><MenuItem> BLOG </MenuItem> </a>
-                        <a href="#contact" className={classes.drawerItem}><MenuItem> CONTACT </MenuItem></a>
+                        <a href="#footer" className={classes.drawerItem}><MenuItem> CONTACT </MenuItem></a>
+                        <Button className={classes.button} style={{color:'black'}}><GetAppIcon />&nbsp; Download Resume</Button>
                     </div>
                 </Drawer>  
                 <IconButton color="inherit" edge="start" onClick={handleDrawerOpen} aria-haspopup="true"> <MenuIcon /> </IconButton>
@@ -65,6 +68,7 @@ const Header = () => {
         )
     
     }
+
 
     return (
         <AppBar position="sticky" className={classes.root}>

@@ -3,32 +3,34 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
     root: {
         fontFamily: '"Segoe UI"',
-        height: '75vh',
+        paddingBottom: '75px',
         paddingTop: '10vh',
         [theme.breakpoints.down('sm')]: {
            paddingTop: '10px',
-           height: '100vh',
+           paddingBottom: '50px',
         },
     },
     title: {
+        color:'#222831',
         marginTop: '15px',
         marginBottom: '50px',
         textAlign: 'Center',
         [theme.breakpoints.down('sm')]: {
-            marginTop: '60px',
+            marginTop: '70px',
             marginBottom: '10px',
             fontSize: '20px'
         },
     },
     info: {
-        fontSize: '20px',
-        fontWeight: '450',
+        fontSize: '18px',
+        color: '#222831',
+        fontWeight: '500',
         paddingTop: '15px',
-        paddingBottom: '75px',
+        paddingBottom: '50px',
         textAlign: 'left',
         [theme.breakpoints.down('sm')]: {
             paddingBottom: '20px',
-            fontSize: '16px'
+            fontSize: '17px'
         },
     },
     window: {

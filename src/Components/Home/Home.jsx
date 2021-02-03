@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
+import {HashLink as Link} from 'react-router-hash-link';
 import Typist from 'react-typist';
 import TypistLoop from 'react-typist-loop'
 import {Grid, Typography, Box, Button, Tooltip} from '@material-ui/core';
+import GetAppIcon from '@material-ui/icons/GetApp';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -19,7 +21,7 @@ const Home = () => {
 
 
     return (
-        <React.Fragment id="#">
+        <div id="#">
         <Grid container className={classes.root} alignItems="center" spacing={0} >
             <Grid xs={12} sm={6} item className={classes.item} alignItems="center">
                 <img className={classes.image} src={myimage} alt="" />
@@ -42,11 +44,12 @@ const Home = () => {
                         ].map(text => <Typist key={text} startDelay={500}>{text} <Typist.Backspace count={text.length + 1} delay={200} /> </Typist>)}
                     </TypistLoop>
                 </Typography>
-                <Button className={classes.button}> Download Resume</Button>
+                <Button className={classes.button}><GetAppIcon/>&nbsp; Download Resume</Button>
+                
             </Grid>
-            <KeyboardArrowDownIcon className={classes.downArrow} />
+            <Link className={classes.arrowLink} smooth to="#about"> <KeyboardArrowDownIcon className={classes.downArrow} /> </Link>
         </Grid>
-        </React.Fragment>
+        </div>
     );
 };
 

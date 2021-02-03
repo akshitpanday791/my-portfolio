@@ -1,3 +1,32 @@
 *{
     margin: 0;
 }
+
+.makeStyles-drawerContainer-8{
+    margin-top: 100px !important;
+}
+
+.red_html{
+    color:#E34F26;
+    background: 'white';
+}
+
+.blue_css {
+   color:  #3C9CD7;
+}
+
+.blue_bootstrap{
+    color: #533B78
+}
+
+.yellow_javascript {
+    color: #EFD81D;
+}
+
+.blue_react{
+    color: #4CD8F8
+}
+
+.green_android{
+    color: #30D780
+}
