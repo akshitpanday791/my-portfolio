@@ -13,6 +13,8 @@ export default makeStyles((theme) => ({
     },
     input: {
         width: '60%',
+        padding: '5px',
+        paddingBottom: '0',
     },
     button: {
         width: '60%',

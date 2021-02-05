@@ -14,25 +14,23 @@ export default makeStyles((theme) => ({
         backgroundColor:'#2C3E50',
         color:'white',
         borderRadius: '20px',
-        flexGrow:'1',
         marginBottom: '50px',
     },
-    modal: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      },
-      paper: {
-        backgroundColor: theme.palette.background.paper,
-        border: '2px solid #000',
-        boxShadow: theme.shadows[5],
-        padding: theme.spacing(2, 4, 3),
-      },
     tagContainer: {
       display:'flex',
       flexDirection: 'row',
-      marginTop:'10px',
-      marginBottom:'10px',
+      pading:'10px',
+      marginTop: '5px',
       flexFlow: 'wrap',
+    },
+    dialogPaper: {
+      minHeight: '80vh',
+      maxHeight: '80vh',
+      minWidth: '70%',
+      maxWidth: '70%',
+    },
+    window: {
+      margin: '50px',
     }
+
 }));

@@ -10,7 +10,7 @@ const Projects = () => {
     return (
         <div className={classes.root} id="projects">
             <h2 className={classes.title}><u>CHECK OUT SOME OF MY PROJECTS</u></h2>
-            <Grid container justify="center" align="center">
+            <Grid container direction="row"  justify="space-evenly" align="center">
                 <Grid item xs={12} sm={6} lg={4}>
                     <ProjectCard title="Crime Registering Chabot" summary="Provides the environment of chatting based Crime Registration for victims. Victim will be able to register his/her complaint by chatting with chatbot, which gives victim a real time crime registration experience just like in police station." />
                 </Grid>

@@ -4,23 +4,15 @@ import './Window.css';
 
 const Window = ({children}) => {
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="column left">
-                        <span className="dot" style={{background:'#ED594A',}}></span>
-                        <span className="dot" style={{background:'#FDD800'}}></span>
-                        <span className="dot" style={{background:'#5AC05A'}}></span>
-                    </div>
-                
-                    <div className="column right">
-                        <div style={{float:'right'}}>
-                            <span className="bar"></span>
-                            <span className="bar"></span>
-                            <span className="bar"></span>
-                        </div>
+            <div className="about__container">
+                <div className="about__row">
+                    <div className="about__column left">
+                        <span className="about__dot" style={{background:'#ED594A',}}></span>
+                        <span className="about__dot" style={{background:'#FDD800'}}></span>
+                        <span className="about__dot" style={{background:'#5AC05A'}}></span>
                     </div>
                 </div> 
-                <div className="content">
+                <div className="about__content">
                     {children}
                 </div>
             </div>
