@@ -19,18 +19,40 @@ export default makeStyles((theme) => ({
     tagContainer: {
       display:'flex',
       flexDirection: 'row',
-      pading:'10px',
+      marginLeft:'10px',
       marginTop: '5px',
       flexFlow: 'wrap',
     },
     dialogPaper: {
-      minHeight: '80vh',
-      maxHeight: '80vh',
-      minWidth: '70%',
-      maxWidth: '70%',
+      minWidth:'60%',
+      maxWidth:'60%',
+      [theme.breakpoints.down('sm')]: {
+        minWidth: '95%',
+        maxWidth: '95%',
+        height: '75%',  
+      },
     },
     window: {
       margin: '50px',
+      width: '100%',
+    },
+    windowText: {
+      fontFamily: '"Segoe UI"',
+      fontWeight:'600',
+      fontSize: '16px',
+      padding: '15px',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '14px',
+      },
+    },
+    windowTitle: {
+      paddingTop: '10px',
+      paddingLeft: '15px',
+      fontFamily: '"Segoe UI"',
+      fontWeight: 'bold',
+      [theme.breakpoints.down('sm')]: {
+        fontSize:'20px',  
+      },
     }
 
 }));

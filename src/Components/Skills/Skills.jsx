@@ -69,7 +69,7 @@ const Skills = () => {
                 
                 <Grid item xs={4} sm={2}>
                     <Box display="flex"  flexDirection="column" alignItems='center'>
-                        <i class="fab fa-github fa-3x"></i>
+                        <i className="fab fa-github fa-3x"></i>
                         <p className={classes.name}>Git/Github</p>
                     </Box>
                 </Grid>

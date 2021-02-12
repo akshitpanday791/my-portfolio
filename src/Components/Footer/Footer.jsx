@@ -26,11 +26,11 @@ const Footer = () => {
                 <Grid item xs={12} sm={5}>
                     <h2 style={{color:'white', textAlign: 'center',padding:'25px'}}>Around the Web</h2>
                     <Box className={classes.iconsContainer} display="flex" flexDirection="row" justifyContent="center">
-                        <Box> <GitHubIcon className={classes.icon} />  </Box>
-                        <Box> <LinkedInIcon className={classes.icon} /> </Box>
-                        <Box> <InstagramIcon className={classes.icon} /> </Box>
-                        <Box> <FacebookIcon  className={classes.icon}/> </Box>
-                        <Box> <TwitterIcon className={classes.icon}/> </Box>
+                        <Box> <a href="https://github.com/unscrewedakshit" target="_blank" rel="noopener noreferrer" style={{color:'white'}}> <GitHubIcon className={classes.icon} /> </a> </Box>
+                        <Box> <a href="https://www.linkedin.com/in/akshitpanday/" target="_blank" rel="noopener noreferrer" style={{color:'white'}}> <LinkedInIcon className={classes.icon} /> </a> </Box>
+                        <Box> <a href="https://www.instagram.com/unscrewed_akshit/" target="_blank" rel="noopener noreferrer" style={{color:'white'}}> <InstagramIcon className={classes.icon} /> </a></Box>
+                        <Box> <a href="https://www.facebook.com/viper.akshit/" target="_blank" rel="noopener noreferrer" style={{color:'white'}}> <FacebookIcon  className={classes.icon}/> </a> </Box>
+                        <Box> <a href="https://twitter.com/unscrewedakshit" target="_blank" rel="noopener noreferrer" style={{color:'white'}}> <TwitterIcon className={classes.icon}/> </a> </Box>
                     </Box>
                 </Grid>
                 <Grid item sm={1}></Grid>

@@ -1,17 +1,16 @@
 import React, {useState,useEffect, useRef} from 'react';
 import Window from './Window/Window';
-import {Card, CardActionArea, CardContent, CardMedia, Button} from '@material-ui/core';
-import {Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from '@material-ui/core';
+import {Card, CardActionArea, CardContent, CardMedia, Button, Typography, List, ListItem} from '@material-ui/core';
+import CloseIcon from '@material-ui/icons/Close';
+import {Dialog, DialogContent} from '@material-ui/core';
 import Tag from './Tag';
-import image from '../../../Assets/Profile.jpg';
-import chatbot from '../../../Assets/chat.png';
+import LanguageIcon from '@material-ui/icons/Language';
 
 import useStyles from './styles';
 
-const ProjectCard = ({title, summary}) => {
+const ProjectCard = ({title, date, coverImage ,summary, description,features, tags}) => {
     const classes = useStyles();
     const [open, setOpen] = useState(false);
-
     const handleClickOpen = () => () => {
         setOpen(true);
     };
@@ -34,51 +33,42 @@ const ProjectCard = ({title, summary}) => {
         <div>
             <Card className={classes.root} onClick={handleClickOpen()}>
                 <CardActionArea>
-                    <CardMedia component="img" alt={title} height="200" image={chatbot} title={title} />
+                    <CardMedia component="img" alt={title} height="200" image={coverImage} title={title} />
                     <CardContent>
                     <h2 style={{fontWeight: 'bold', padding:'8px'}} >{title} </h2>
-                    <p style={{fontWeight: 'bold', fontSize:'16px', color:'#f5f4f4'}}>Augest 2020</p>
-                    <p style={{ fontSize:'15px', padding: '5px', textAlign: 'left', fontWeight: '550', lineHeight:'1.6'}}>{summary}</p>
+                    <p style={{fontWeight: 'bold', fontSize:'15px', color:'lightGray'}}> {date} </p>
+                    <p style={{ fontSize:'14px', padding: '1px', textAlign: 'left', fontWeight: '550', lineHeight:'1.6'}}>{summary}</p>
                     </CardContent>
                     
-                    <h2>Technologies Used</h2>
+                    <h3>Technologies Used</h3>
                     <div className={classes.tagContainer}>
-                        <Tag name="Javascript" />
-                        <Tag name="Parcel Bundler" />
-                        <Tag name="NLP" />
-                        <Tag name="Firebase" />
-                        <Tag name="Bootstrap" />
+                        {
+                            tags.map((tag) => <Tag key={tag} name={tag} /> )
+                        }
+                        
                     </div>
-                    <Button style={{ color:'white', marginBottom: '5px'}}>More info</Button>
                 </CardActionArea>
+                <Button style={{ color:'white', marginBottom: '5px'}}>Click for more info</Button>
             </Card>
             <Dialog classes={{ paper: classes.dialogPaper }} open={open} onClose={handleClose} scroll={'paper'} aria-labelledby="scroll-dialog-title" aria-describedby="scroll-dialog-description">
 
                 <DialogContent className={classes.content}>
+                        <div style={{width:'100%', display:'flex'}}> <div style={{marginLeft:'auto'}}><CloseIcon onClick={handleClose} /></div> </div>
                         <Window className={classes.window}>
-                            <img src={chatbot} style={{width:'50%',objectFit:'contain'}} alt="" />
-                        </Window> 
-                        <h2>{title}</h2>
-                        <p>
-                        Prototype of Efficient Chabot for Crime Registration Purpose
-
-Provides the environment of chatting based Crime Registration for victims. Victim will be able to register his/her complaint by chatting with chatbot, which gives victim a real time crime registration experience just like in police station.Prototype of Efficient Chabot for Crime Registration Purpose
-
-Provides the environment of chatting based Crime Registration for victims. Victim will be able to register his/her complaint by chatting with chatbot, which gives victim a real time crime registration experience just like in police station.Prototype of Efficient Chabot for Crime Registration Purpose
-
-Provides the environment of chatting based Crime Registration for victims. Victim will be able to register his/her complaint by chatting with chatbot, which gives victim a real time crime registration experience just like in police station.Prototype of Efficient Chabot for Crime Registration Purpose
-
-Provides the environment of chatting based Crime Registration for victims. Victim will be able to register his/her complaint by chatting with chatbot, which gives victim a real time crime registration experience just like in police station.
-                        </p>
+                            <h2 className={classes.windowTitle}>{title}</h2>
+                            <p className={classes.windowText}>
+                                <Typography component="p">{summary}</Typography>
+                                <Typography component="p">
+                                    {description}
+                                </Typography>
+                            </p>
+                            <Typography style={{marginLeft: '8px'}} variant="h6">Key Features</Typography>
+                            <ul style={{marginLeft: '15px'}} className={classes.windowText}>
+                                {features.map((feature,i) => <li key={i}>{feature}</li>)}
+                            </ul>
+                        </Window>
+                        <div style={{marginTop:'10px',display:'flex',justifyContent:'center',}}><i style={{marginRight:'8px'}} className="fab fa-github fa-2x"> <LanguageIcon style={{transform: 'scale(1.6)', marginLeft:'8px'}} /></i></div> 
                 </DialogContent>
-                {/* <DialogActions>
-                    <Button onClick={handleClose} color="primary">
-                        Cancel
-                    </Button>
-                    <Button onClick={handleClose} color="primary">
-                        Subscribe
-                    </Button>
-                </DialogActions> */}
             </Dialog>
             
         </div>

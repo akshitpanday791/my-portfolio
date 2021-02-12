@@ -53,13 +53,13 @@ const Header = () => {
 
         return(
             <Toolbar>
-                <Typography variant="h5" className={classes.title}>Portfolio</Typography>
+                <Typography variant="h6" className={classes.title}>Portfolio</Typography>
                 <Drawer anchor="left" open={drawerOpen} onClose={handleDrawerClose}>
                     <div className={classes.drawerContainer}>
-                        <a href="#" className={classes.drawerItem}> <MenuItem> HOME </MenuItem></a>
-                        <a href="#about" className={classes.drawerItem}><MenuItem> ABOUT </MenuItem></a>
-                        <a href="#projects" className={classes.drawerItem}><MenuItem> PROJECTS </MenuItem></a>
-                        <a href="#footer" className={classes.drawerItem}><MenuItem> CONTACT </MenuItem></a>
+                        <a href="#" onClick={handleDrawerClose} className={classes.drawerItem}> <MenuItem> HOME </MenuItem></a>
+                        <a href="#about" onClick={handleDrawerClose} className={classes.drawerItem}><MenuItem> ABOUT </MenuItem></a>
+                        <a href="#projects" onClick={handleDrawerClose} className={classes.drawerItem}><MenuItem> PROJECTS </MenuItem></a>
+                        <a href="#footer" onClick={handleDrawerClose} className={classes.drawerItem}><MenuItem> CONTACT </MenuItem></a>
                         <Button className={classes.button} style={{color:'black'}}><GetAppIcon />&nbsp; Download Resume</Button>
                     </div>
                 </Drawer>  

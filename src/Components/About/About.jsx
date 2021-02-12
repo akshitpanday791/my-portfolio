@@ -20,7 +20,7 @@ const About = () => {
                         <h3 className={classes.intro}>Hi :)</h3>
                         <p className={classes.info}>👋I'm Akshit Panday from Nagpur, India. I am a Web Developer and Programmer currently pursing a Bachelors Degree in 
                         Computer Science. After my graduation I'm interested in working in some reputed IT-company for my
-                        professional as well as personal growth. I'm a Tech enthusiast woh loves to build full stack Web apps & Mobile apps, Open source contributions and to explore latest frameworks and technologies in field of Computer Science.  Apart from this I like to play online video games
+                        professional as well as personal growth. I'm a Tech enthusiast who loves to build full stack Web apps & Mobile apps, Open source contributions and to explore latest frameworks and technologies in field of Computer Science.  Apart from this I like to play online video games
                             and travelling.</p>
                     </Window>
                 </Grid>

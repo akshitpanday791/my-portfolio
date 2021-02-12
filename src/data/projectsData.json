@@ -1,0 +1,78 @@
+{
+    "projects": [
+        {
+            "sr": "1",
+            "title": "Crime Registering Chatbot",
+            "date": "Augest 2020",
+            "summary": "Provides the environment of chatting based Crime Registration for victims remotely and instantly. This system gives a real time crime reporting experience. After the victims answers the questions of chatbot, the officer will get a auto-generated report and then take suitable action.",
+            "description": "This system gives a real time crime reporting experience and does not require victim to go to physically visit police station for filing a report. This was a group project which was developed during Smart India Hackathon(SIH)-2020. It was a 5 member team and project was build by great coordination among team members",
+            "features": [ 
+                "OTP verification for registering users", 
+                "End to End Data Encryption for Crime Registeration",
+                "NLP (Natural Language Processing) implemented for processing user responses and validation purpose",
+                "Decision tree for questioning",
+                "Validation for user responses",
+                "Stores the IP address and Some Information about device",
+                "Machine Learning implemented (Chabot can be trained by adding new dataset of crime, no explicit programming needed)",
+                "Current Crime Datasets: Ransomware, Phishing, Theft, (more data can be added and bot will learn it automatically)"
+            ],
+            "tags": ["Javascript","Parcel Bundler","Web Components","NLP","Firebase","Git","Bootstrap"]
+        },
+        {
+            "sr": "2",
+            "title": "Task Management App",
+            "date": "October 2020",
+            "summary": "This is Task management android app which allows users to add their pending tasks/todos and keep a note of them to increase their productivity. The app has complete user-authentication for signup/signin along with email verfication. ",
+            "description": "The App was made as a mini project for learning android programming. The App uses backend and database provided by firebase.",
+            "features": [ 
+                "Complete User Authentication", 
+                "Email verfication upon sign-up for verifying identity of user",
+                "Facility for changing account password/Forgot Passowrd to users",
+                "Allows user to add their pending and upcoming tasks/todos",
+                "Users can remove/delete the tasks after completion",
+                "Reminder to users through Alarm and Notifcations before the due data"
+            ],
+            "tags": ["Java","Android Studio","Firebase","XML","No-SQL database"]
+        },
+        {
+            "sr": "3",
+            "title": "Portfolio",
+            "date": "Febraury 2020",
+            "summary": "This project is my personal portfolio which gives tell gives information about my skills and projects. This protfolio is made using React and material-ui for styling.",
+            "features": [
+                "Made using Modern React with React-Hooks",
+                "UI designed and styled using Material-UI",
+                "All the Portfolio data flows from a single JSON file to respectives sections which makes updating and modfying any data on the portfolio a lot easier.",
+                "Portfolio has full Mobile responsive design"
+            ],
+            "tags": ["Javascript", "React", "React-Hooks", "Material-UI", "JSON"]
+        },
+        {
+            "sr": "4",
+            "title": "Voice Powered Expense Tracker",
+            "date": "January 2021",
+            "summary": "This is a expense tracker web app which can also be installed as a Progressive Web App (PWA). In this user users can add all trasactions and app the app with summarize and visualize all transaction with help of charts",
+            "description": "The app also has a voice functionality thourght which the app will automatically pickup the required transaction details from the user's speech. The voice recognization is powered by https://www.speechly.com/ .",
+            "features": [
+                "The App also has voice functionality and can detect the transactions details like amount, date, type of transaction automatically from user-speech.",
+                "App analyzes the transactions and also convert it in form of charts for visual overview.",
+                "App also has localstorage implemented to store the all previous transactions in browser."
+            ],
+            "tags": ["Javascript","React", "Material-UI","Speechly", "React-Context-API" ]
+        },
+        {
+            "sr": "5",
+            "title": "Mail4U",
+            "date": "November 2019",
+            "summary": "A Short Messaging Application. This a Java Desktop application made using SQL Database. It has Sign In & Sign Up functionality for users and View all send & received email. Email can be sent through unique username.",
+            "description": "This was a group project of 3 members made for mini-project for college submission in 3rd semester.",
+            "features": [ 
+                "User Sign-in and Sign-up using SQL", 
+                "Users can send messages/Email to each through username which is unique for every user",
+                "View messages/Delete messages",
+                "It is a Desktop Application and can run on Mac/Windows through JVM"
+            ],
+            "tags": ["Java","JavaFX","SQL"]
+        }
+    ]
+}

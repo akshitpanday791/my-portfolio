@@ -17,8 +17,8 @@ export default makeStyles((theme) => ({
         textAlign: 'Center',
         [theme.breakpoints.down('sm')]: {
             marginTop: '70px',
-            marginBottom: '10px',
-            fontSize: '20px'
+            marginBottom: '20px',
+            fontSize: '25px'
         },
     },
     info: {

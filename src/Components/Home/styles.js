@@ -8,11 +8,8 @@ export default makeStyles((theme) => ({
         backgroundImage : `url(${backgroundImage})`,
         backgrundPosition: 'center center',
         fontFamily: '"Segoe UI"',
-        height: '90vh',
+        height: '92vh',
         color: 'white',
-        [theme.breakpoints.down('sm')]: {
-            height: '90vh',
-        },
     },
     name: {
         fontWeight: 'bold',

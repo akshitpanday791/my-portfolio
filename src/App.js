@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 import Header from './Components/Header/Header';
@@ -8,7 +8,10 @@ import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import Footer from './Components/Footer/Footer';
 
+
+
 import useStyles from './styles';
+
 
 const App = () => {
     const classes = useStyles();

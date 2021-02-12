@@ -4,9 +4,9 @@ export default makeStyles((theme) => ({
     root: {
         backgroundColor: '#0E0F13',
         color: '#f6f5f5',
-        paddingTop: '7px',
+        paddingBottom:'5px',
         fontFamily: '"Segoe UI"',
-        height: '10vh',
+        height: '8vh',
         width: '100%',
         boxShadow: 'none',
     },
@@ -18,6 +18,7 @@ export default makeStyles((theme) => ({
     title: {
         flexGrow: 1,
         fontWeight:'bold',
+        fontSize:'25px',
         marginLeft: '5px',
     },
     navDisplayFlex: {
@@ -31,9 +32,9 @@ export default makeStyles((theme) => ({
     listItem: {
         color: '#f6f5f5',
         textDecoration: 'none',
-        fontSize: '17px',
+        fontSize: '16px',
         fontWeight:'bold',
-        marginRight: '25px',
+        marginRight: '20px',
         "&:hover": {
             color: '#bbbfca',
             transform: 'translateY(-2px)',
