@@ -34,7 +34,7 @@ const Header = () => {
         return(
             <Toolbar>
                 <Container className={classes.navbarDisplayFlex}>
-                    <Typography variant="h4" className={classes.title}>Portfolio</Typography>
+                    <Typography variant="h4" className={classes.title}><a style={{textDecoration: 'none', color:'white'}} href="/">Portfolio</a></Typography>
                     <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
                         <Link smooth to="#" className={classes.listItem}> <ListItem button>HOME</ListItem> </Link>
                         <Link smooth to="#about" className={classes.listItem}> <ListItem button>ABOUT</ListItem> </Link>

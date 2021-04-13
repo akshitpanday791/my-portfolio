@@ -4,6 +4,7 @@ import {Grid} from '@material-ui/core';
 import data from '../../data/projectsData.json';
 
 import chatbot from '../../Assets/chat.png';
+import ecommerce from '../../Assets/ecommerce.png';
 import tasks from '../../Assets/task-management.png';
 import mail from '../../Assets/mail.png';
 import me from '../../Assets/portfolio.png';
@@ -11,9 +12,9 @@ import expense from '../../Assets/expense.png';
 
 import useStyles from './styles';
 
-const background = [chatbot, tasks, me, expense, mail];
+const background = [chatbot, ecommerce,tasks, me, expense, mail];
 
-const Projects = (projectData) => {
+const Projects = () => {
     const classes = useStyles();
     
 
@@ -34,6 +35,7 @@ const Projects = (projectData) => {
                                 description={data.description}
                                 features={data.features}
                                 tags={data.tags}
+                                github={data.github}
                                 />
                             </Grid>
                         );

@@ -20,6 +20,21 @@
         },
         {
             "sr": "2",
+            "title": "Full stack E-commerce store",
+            "date": "Febraury 2021",
+            "summary": "This a complete full stack eCommerce store made with MERN stack. The store has funtionalities for buying products, payment gateway, user-authentication, product search and rating and admin functions to manage the store",
+            "description": "The store has funtionalities for buying products, payment gateway, user-authentication, product search and rating and admin functions to manage the store",
+            "features": [
+                "Functionality for customers to view products, add to cart, review products, buy products, search products etc.",
+                "Implemented admin dashboard functions like mangaging customer orders, change stock of products, add new products, edit products, manage users etc",
+                "User authentication and authorization using JSON web-tokens (JWT)",
+                "Application state management using redux",
+                "Payment gateway implemented using PayPal"
+            ],
+            "tags": ["React", "Redux", "mongodb", "node.js", "express.js", "REST API"]
+        },
+        {
+            "sr": "3",
             "title": "Task Management App",
             "date": "October 2020",
             "summary": "This is Task management android app which allows users to add their pending tasks/todos and keep a note of them to increase their productivity. The app has complete user-authentication for signup/signin along with email verfication. ",
@@ -32,12 +47,13 @@
                 "Users can remove/delete the tasks after completion",
                 "Reminder to users through Alarm and Notifcations before the due data"
             ],
-            "tags": ["Java","Android Studio","Firebase","XML","No-SQL database"]
+            "tags": ["Java","Android Studio","Firebase","XML","No-SQL database"],
+            "github": "https://github.com/unscrewedakshit/Plan4U-Task_Tracker_App"
         },
         {
-            "sr": "3",
+            "sr": "4",
             "title": "Portfolio",
-            "date": "Febraury 2020",
+            "date": "Febraury 2021",
             "summary": "This project is my personal portfolio which gives tell gives information about my skills and projects. This protfolio is made using React and material-ui for styling.",
             "features": [
                 "Made using Modern React with React-Hooks",
@@ -48,7 +64,7 @@
             "tags": ["Javascript", "React", "React-Hooks", "Material-UI", "JSON"]
         },
         {
-            "sr": "4",
+            "sr": "5",
             "title": "Voice Powered Expense Tracker",
             "date": "January 2021",
             "summary": "This is a expense tracker web app which can also be installed as a Progressive Web App (PWA). In this user users can add all trasactions and app the app with summarize and visualize all transaction with help of charts",
@@ -61,7 +77,7 @@
             "tags": ["Javascript","React", "Material-UI","Speechly", "React-Context-API" ]
         },
         {
-            "sr": "5",
+            "sr": "7",
             "title": "Mail4U",
             "date": "November 2019",
             "summary": "A Short Messaging Application. This a Java Desktop application made using SQL Database. It has Sign In & Sign Up functionality for users and View all send & received email. Email can be sent through unique username.",
@@ -72,7 +88,8 @@
                 "View messages/Delete messages",
                 "It is a Desktop Application and can run on Mac/Windows through JVM"
             ],
-            "tags": ["Java","JavaFX","SQL"]
+            "tags": ["Java","JavaFX","SQL"],
+            "github": "https://github.com/unscrewedakshit/MAIL4U_Project"
         }
     ]
 }

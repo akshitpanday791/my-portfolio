@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-
+//#2C3E50
 export default makeStyles((theme) => ({
     root: {
         fontFamily: '"Segoe UI"',

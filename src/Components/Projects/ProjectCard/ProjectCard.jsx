@@ -8,7 +8,8 @@ import LanguageIcon from '@material-ui/icons/Language';
 
 import useStyles from './styles';
 
-const ProjectCard = ({title, date, coverImage ,summary, description,features, tags}) => {
+const ProjectCard = ({title, date, coverImage ,summary, description,features, tags, github}) => {
+    console.log(github);
     const classes = useStyles();
     const [open, setOpen] = useState(false);
     const handleClickOpen = () => () => {
@@ -33,14 +34,14 @@ const ProjectCard = ({title, date, coverImage ,summary, description,features, ta
         <div>
             <Card className={classes.root} onClick={handleClickOpen()}>
                 <CardActionArea>
-                    <CardMedia component="img" alt={title} height="200" image={coverImage} title={title} />
+                    <CardMedia component="img" alt={title} height="175" image={coverImage} title={title} />
                     <CardContent>
-                    <h2 style={{fontWeight: 'bold', padding:'8px'}} >{title} </h2>
-                    <p style={{fontWeight: 'bold', fontSize:'15px', color:'lightGray'}}> {date} </p>
-                    <p style={{ fontSize:'14px', padding: '1px', textAlign: 'left', fontWeight: '550', lineHeight:'1.6'}}>{summary}</p>
+                    <h2 style={{fontWeight: 'bold', padding:'2px', paddingBottom:'5px'}} >{title} </h2>
+                    <p style={{fontWeight: 'bold', fontSize:'14px', color:'lightGray'}}> {date} </p>
+                    <p style={{ fontSize:'13px', padding: '1px', textAlign: 'left', fontWeight: '550', lineHeight:'1.5'}}>{summary}</p>
                     </CardContent>
                     
-                    <h3>Technologies Used</h3>
+                    <h4>Technologies Used</h4>
                     <div className={classes.tagContainer}>
                         {
                             tags.map((tag) => <Tag key={tag} name={tag} /> )
@@ -67,7 +68,7 @@ const ProjectCard = ({title, date, coverImage ,summary, description,features, ta
                                 {features.map((feature,i) => <li key={i}>{feature}</li>)}
                             </ul>
                         </Window>
-                        <div style={{marginTop:'10px',display:'flex',justifyContent:'center',}}><i style={{marginRight:'8px'}} className="fab fa-github fa-2x"> <LanguageIcon style={{transform: 'scale(1.6)', marginLeft:'8px'}} /></i></div> 
+                        <div style={{marginTop:'10px',display:'flex',justifyContent:'center',}}> <a href={github? github : '/'} target="_blank"> <i style={{marginRight:'8px'}} className="fab fa-github fa-2x" /> </a></div> 
                 </DialogContent>
             </Dialog>
             
