@@ -68,6 +68,14 @@ export default makeStyles((theme) => ({
             marginTop: '20px'
         },
     },
+    link: {
+        textDecoration: 'none',
+        color: '#ffff',
+        "&:hover": {
+            backgroundColor: 'white',
+            color:'#111010',
+        }
+    },
     downArrow: {
         color: '#111010',
         backgroundColor: '#ffff',

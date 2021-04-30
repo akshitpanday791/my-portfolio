@@ -2,7 +2,7 @@ import React from 'react';
 import {HashLink as Link} from 'react-router-hash-link';
 import Typist from 'react-typist';
 import TypistLoop from 'react-typist-loop'
-import {Grid, Typography, Box, Button, Link as MLink} from '@material-ui/core';
+import {Grid, Typography, Box, Button} from '@material-ui/core';
 import GetAppIcon from '@material-ui/icons/GetApp';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -44,7 +44,7 @@ const Home = () => {
                         ].map(text => <Typist key={text} startDelay={500}>{text} <Typist.Backspace count={text.length + 1} delay={200} /> </Typist>)}
                     </TypistLoop>
                 </Typography>
-                <Button className={classes.button}><GetAppIcon/>&nbsp; Download Resume</Button>
+                <Button href="https://drive.google.com/file/d/1LuVx4T3uZrqZNYeybeLj-dG0HpuF9RM8/view?usp=sharing" target="__blank" className={classes.button}><GetAppIcon/>&nbsp; Download Resume</Button>
                 
             </Grid>
             <Link className={classes.arrowLink} smooth to="#about"> <KeyboardArrowDownIcon className={classes.downArrow} /> </Link>

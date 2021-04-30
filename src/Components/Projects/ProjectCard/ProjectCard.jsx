@@ -1,10 +1,10 @@
 import React, {useState,useEffect, useRef} from 'react';
 import Window from './Window/Window';
-import {Card, CardActionArea, CardContent, CardMedia, Button, Typography, List, ListItem} from '@material-ui/core';
+import {Card, CardActionArea, CardContent, CardMedia, Button, Typography} from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 import {Dialog, DialogContent} from '@material-ui/core';
 import Tag from './Tag';
-import LanguageIcon from '@material-ui/icons/Language';
+
 
 import useStyles from './styles';
 

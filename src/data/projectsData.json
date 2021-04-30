@@ -16,7 +16,8 @@
                 "Machine Learning implemented (Chabot can be trained by adding new dataset of crime, no explicit programming needed)",
                 "Current Crime Datasets: Ransomware, Phishing, Theft, (more data can be added and bot will learn it automatically)"
             ],
-            "tags": ["Javascript","Parcel Bundler","Web Components","NLP","Firebase","Git","Bootstrap"]
+            "tags": ["Javascript","Parcel Bundler","Web Components","NLP","Firebase","Git","Bootstrap"],
+            "github": "https://github.com/a6h15hek/CrimeRegistrationChatbot"
         },
         {
             "sr": "2",
@@ -61,7 +62,8 @@
                 "All the Portfolio data flows from a single JSON file to respectives sections which makes updating and modfying any data on the portfolio a lot easier.",
                 "Portfolio has full Mobile responsive design"
             ],
-            "tags": ["Javascript", "React", "React-Hooks", "Material-UI", "JSON"]
+            "tags": ["Javascript", "React", "React-Hooks", "Material-UI", "JSON"],
+            "github": "https://github.com/unscrewedakshit/my-portfolio"
         },
         {
             "sr": "5",
@@ -74,7 +76,8 @@
                 "App analyzes the transactions and also convert it in form of charts for visual overview.",
                 "App also has localstorage implemented to store the all previous transactions in browser."
             ],
-            "tags": ["Javascript","React", "Material-UI","Speechly", "React-Context-API" ]
+            "tags": ["Javascript","React", "Material-UI","Speechly", "React-Context-API" ],
+            "github": "https://github.com/unscrewedakshit/voice-powered-expense-tracker"
         },
         {
             "sr": "7",

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Grid, Paper, TextField } from '@material-ui/core';
+import {Button, TextField } from '@material-ui/core';
 import SendIcon from '@material-ui/icons/Send';
 
 import useStyles from './styles';

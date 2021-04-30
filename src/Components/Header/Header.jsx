@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import {withRouter} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import {AppBar, Toolbar, Typography, Button, IconButton, Drawer, MenuItem, Container, List, ListItem} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -60,7 +59,7 @@ const Header = () => {
                         <a href="#about" onClick={handleDrawerClose} className={classes.drawerItem}><MenuItem> ABOUT </MenuItem></a>
                         <a href="#projects" onClick={handleDrawerClose} className={classes.drawerItem}><MenuItem> PROJECTS </MenuItem></a>
                         <a href="#footer" onClick={handleDrawerClose} className={classes.drawerItem}><MenuItem> CONTACT </MenuItem></a>
-                        <Button className={classes.button} style={{color:'black'}}><GetAppIcon />&nbsp; Download Resume</Button>
+                        <Button className={classes.button} style={{color:'black'}} href="https://drive.google.com/file/d/1LuVx4T3uZrqZNYeybeLj-dG0HpuF9RM8/view?usp=sharing" target="__blank"><GetAppIcon />&nbsp; Download Resume</Button>
                     </div>
                 </Drawer>  
                 <IconButton color="inherit" edge="start" onClick={handleDrawerOpen} aria-haspopup="true"> <MenuIcon /> </IconButton>

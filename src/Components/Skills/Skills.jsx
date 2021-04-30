@@ -4,7 +4,6 @@ import {Box, Grid} from '@material-ui/core';
 import mongodb from '../../Assets/MongoDB.png';
 import mui from '../../Assets/mui.png';
 import firebase from '../../Assets/firebase.png';
-import java from '../../Assets/java.png'
 
 import useStyles from './styles';
 const Skills = () => {
