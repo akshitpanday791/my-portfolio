@@ -8,10 +8,7 @@ import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import Footer from './Components/Footer/Footer';
 
-
-
 import useStyles from './styles';
-
 
 const App = () => {
     const classes = useStyles();
